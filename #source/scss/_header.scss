@@ -1,0 +1,140 @@
+header.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+    padding: 55px 0 20px;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+
+    &.scrollheader {
+        padding: 30px 0;
+        background: #2b4e82;
+    }
+}
+
+.header__rightsect {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    nav {
+        width: 100%;
+        max-width: 80%;
+        flex: 0 0 80%;
+    }
+
+    .header__link {
+        width: 100%;
+        max-width: 20%;
+        flex: 0 0 20%;
+        text-align: right;
+
+        a {
+            font-size: 17px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+
+            img {
+                width: 28px;
+                margin-left: 21px;
+                margin-top: -1px;
+            }
+
+            span {
+                position: relative;
+                display: inline-block;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 0%;
+                    height: 3px;
+                    background: #fff;
+                    border-radius: 8px;
+                    transition: 0.3s;
+                    animation-timing-function: ease-in-out;
+                }
+
+
+            }
+
+            &:hover {
+                span {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                img {
+                    animation: arrmove 2s ease-in-out infinite;
+                }
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin-right: 55px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                text-transform: uppercase;
+                font-size: 16px;
+                color: #fff;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 0%;
+                    height: 3px;
+                    background: #fff;
+                    border-radius: 8px;
+                    transition: 0.3s;
+                    animation-timing-function: ease-in-out;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes arrmove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+

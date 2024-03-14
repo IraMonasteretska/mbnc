@@ -1,0 +1,179 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: inherit !important;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+button:focus,
+input:focus {
+    outline: transparent;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    max-width: 100vw;
+    cursor: default;
+    color: #191919;
+    font-family: "Poppins", sans-serif;
+    line-height: 150%;
+}
+
+.main {
+    flex: 1 1 auto;
+    transition: .4s ease;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+@media(min-width:1500px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1444px;
+    }
+}
+
+h1 {
+    font-family: 'vcrosdmono';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 73px;
+    position: relative;
+    padding-left: 44px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 28px;
+        height: 56px;
+        background: url('../img/beforeh1.png') no-repeat center / 100% 100%;
+        position: absolute;
+        left: 0;
+        top: 12px;
+    }
+}
+
+h2 {
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 90%;
+    color: #0A2458;
+    font-family: 'vcrosdmono';
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 23px;
+        height: 46px;
+        background: url('../img/beforeh1.png') no-repeat center / 100% 100%;
+        position: absolute;
+        left: 0;
+        top: -1px;
+    }
+}
+
+.bluebtn {
+    display: inline-block;
+    background: rgb(75, 83, 255);
+    padding: 17.5px 44px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
+
+    &:hover {
+        color: rgb(75, 83, 255);
+        animation: pulse1 3s infinite;
+        background: #fff;
+        
+
+        &>svg {
+            transform: scale(0.8);
+
+            path {
+                stroke: rgb(75, 83, 255);
+            }
+        }
+    }
+
+    svg {
+        width: 28px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 26px;
+        transition: 0.3s;
+
+        path {
+            transition: 0.3s;
+        }
+    }
+}
+
+@keyframes pulse1 {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .5);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .5);
+    }
+}

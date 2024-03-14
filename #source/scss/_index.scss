@@ -1,0 +1,83 @@
+.herosection {
+    min-height: calc(100vh + 100px);
+    position: relative;
+    background: url('../img/bg1.png') no-repeat bottom center / cover;
+    padding-top: 238px;
+    overflow: hidden;
+
+    h1 {
+        color: #fff;
+        margin-bottom: 64px;
+
+        span {
+            display: block;
+            padding-left: 134px;
+            font-style: normal;
+        }
+    }
+
+    .descrbox {
+        padding-left: 60px;
+
+        p {
+            max-width: 462px;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 130%;
+            color: rgba(#fff, 0.75);
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+@keyframes move {
+
+    0% {
+        transform: translateY(-50%) scale(1) rotateZ(0);
+    }
+
+    50% {
+        transform: translateY(-65%) scale(0.8) rotateZ(180deg);
+    }
+
+    100% {
+        transform: translateY(-50%) scale(1) rotateZ(360deg);
+    }
+}
+
+.herosection__img {
+    animation: move 15s linear 0s infinite;
+}
+
+.herosection__img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// --
+.services {
+    padding: 180px 0 165px;
+}
+
+.services__content {
+    padding: 0 60px;
+}
+
+.services__header {
+    margin-bottom: 90px;
+
+    p {
+        max-width: 386px;
+        color: rgba(#2B4E82, 0.7);
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+
+
+
+// animation: focus-in-contract 2.2s ease-out 0s infinite alternate none;*/
+
