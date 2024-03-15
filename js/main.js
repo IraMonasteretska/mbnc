@@ -17,12 +17,17 @@ $(document).ready(function () {
     }
 
 
-
-   
-
-
-
-
+    // input label
+    const inputs = document.querySelectorAll('.active-on-type');
+    inputs.forEach(function(input) {
+        input.addEventListener('input', function () {
+            if (input.value.trim() !== '') {
+                input.classList.add('active');
+            } else {
+                input.classList.remove('active');
+            }
+        });
+    });
 
 
 
