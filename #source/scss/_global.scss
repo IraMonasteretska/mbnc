@@ -105,7 +105,8 @@ h1 {
     }
 }
 
-h2, h3 {
+h2,
+h3 {
     font-size: 55px;
     font-weight: 400;
     line-height: 90%;
@@ -141,7 +142,7 @@ h2, h3 {
         color: rgb(75, 83, 255);
         animation: pulse1 3s infinite;
         background: #fff;
-        
+
 
         &>svg {
             transform: scale(0.8);
@@ -165,42 +166,62 @@ h2, h3 {
     }
 }
 
-@keyframes pulse1 {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .5);
-    }
-
-    50% {
-        -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, .5);
-    }
-}
-
-@keyframes pulse2 {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 rgba(75,83,255, .5);
-    }
-
-    50% {
-        -webkit-box-shadow: 0 0 0 20px rgba(75,83,255, 0);
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(75,83,255, .5);
-    }
-}
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+body.disscroll {
+    overflow: hidden;
+}
+
+@media(max-width:1599.8px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2,
+    h3 {
+        font-size: 42px;
+    }
+
+    h1:before {
+        height: 46px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    h1 {
+        font-size: 50px;
+        padding-left: 35px;
+    }
+
+    h2,
+    h3 {
+        font-size: 36px;
+        padding-left: 30px;
+    }
+
+    h1:before {
+        height: 36px;
+        width: 22px;
+    }
+
+    h2:before, h3:before {
+        width: 18px;
+        height: 30px;
+    }
+}
+
+@media(max-width:767.8px) {
+    h1 {
+        font-size: 42px;
+    }
 }

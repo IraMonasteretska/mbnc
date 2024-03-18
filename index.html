@@ -8,6 +8,7 @@
     <!-- <link rel="icon" type="image/x-icon" href="favicon.png"> -->
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lib/aos.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                             <img src="img/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 menuwrapper">
                         <div class="header__rightsect">
                             <nav>
                                 <ul>
@@ -39,26 +40,30 @@
                         </div>
                     </div>
                 </div>
+                <button class="menubtn">
+                    <img src="img/menuline.svg" alt="menu">
+                    <img src="img/menuline.svg" alt="menu">
+                </button>
             </div>
         </header>
 
         <main class="main">
-            <section class="herosection">
+            <section class="herosection" id="1">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h1 class="text">
+                            <h1 class="text" data-aos="fade-left">
                                 Simplify Tasks
                                 <span>Amplify Results</span>
                             </h1>
-                            <div class="descrbox">
+                            <div class="descrbox" data-aos="fade-left" data-aos-delay="100">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur. Pulvinar urna eget rutrum fermentum nisi.
                                     Nam volutpat fermentum sed amet elementum integer. Purus scelerisque nibh et velit
                                     eget et augue nunc.
                                 </p>
 
-                                <a href="#" class="bluebtn">
+                                <a href="#" class="bluebtn" data-aos="fade-left" data-aos-delay="200">
                                     Get started
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -72,15 +77,15 @@
                 <img class="herosection__img" src="img/img1.png" alt="img">
             </section>
 
-            <section class="services">
+            <section class="services" id="2">
                 <div class="container">
                     <div class="services__content">
                         <div class="services__header">
                             <div class="row">
-                                <div class="col-lg-7">
+                                <div class="col-xl-7 col-lg-6">
                                     <h2>Our Service</h2>
                                 </div>
-                                <div class="col-lg-5">
+                                <div class="col-xl-5 col-lg-6">
                                     <p>
                                         Nam volutpat fermentum sed amet elementum integer. Purus scelerisque nibh et
                                         velit eget et augue nunc.
@@ -91,7 +96,7 @@
                         <div class="services__body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <a href="#" class="service">
+                                    <a href="#" class="service" id="s1" data-aos="fade-up">
                                         <p class="num">
                                             <01>
                                         </p>
@@ -109,7 +114,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-6">
-                                    <a href="#" class="service">
+                                    <a href="#" class="service" id="s2" data-aos="fade-up">
                                         <p class="num">
                                             <02>
                                         </p>
@@ -125,7 +130,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-6">
-                                    <a href="#" class="service">
+                                    <a href="#" class="service" id="s3" data-aos="fade-up">
                                         <p class="num">
                                             <03>
                                         </p>
@@ -141,7 +146,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-6">
-                                    <a href="#" class="service">
+                                    <a href="#" class="service" id="s4" data-aos="fade-up">
                                         <p class="num">
                                             <04>
                                         </p>
@@ -163,7 +168,7 @@
                 <img class="servimgbg" src="img/el1.png" alt="img">
             </section>
 
-            <section class="ourprofession">
+            <section class="ourprofession" id="3">
                 <div class="container">
                     <div class="ourprofession__content">
                         <div class="row">
@@ -180,7 +185,7 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="profsections">
-                                    <div class="profsection">
+                                    <div class="profsection" id="p1"  data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/prof1.png" alt="img">
                                         </div>
@@ -191,7 +196,7 @@
                                             velit nunc orci scelerisque dui
                                         </p>
                                     </div>
-                                    <div class="profsection">
+                                    <div class="profsection" id="p2"  data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/prof2.png" alt="img">
                                         </div>
@@ -202,7 +207,7 @@
                                             scelerisque dui
                                         </p>
                                     </div>
-                                    <div class="profsection">
+                                    <div class="profsection" id="p3"  data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/prof3.png" alt="img">
                                         </div>
@@ -212,7 +217,7 @@
                                             Sagittis elementum purus tincidunt ac. Odio velit nunc orci scelerisque dui
                                         </p>
                                     </div>
-                                    <div class="profsection">
+                                    <div class="profsection" id="p4"  data-aos="fade-up">
                                         <div class="imgwrap">
                                             <img src="img/prof4.png" alt="img">
                                         </div>
@@ -233,7 +238,7 @@
                 <img src="img/el3.png" alt="img" class="ourprofession__el2">
             </section>
 
-            <section class="contact">
+            <section class="contact" id="4">
                 <div class="container">
                     <div class="contact__content">
                         <div class="row">
@@ -308,7 +313,7 @@
                                             </div>
                                             <div class="col-12">
                                                 <div class="inputfield">
-                                                    <textarea class="active-on-type"></textarea>
+                                                    <textarea class="active-on-type" id="message"></textarea>
                                                     <label for="message">write us your message</label>
                                                 </div>
                                             </div>
@@ -335,7 +340,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="col-xl-2 col-lg-3">
                         <div class="footer__leftsect">
                             <a href="index.html" class="footerlogo">
                                 <img src="img/logo-footer.svg" alt="img">
@@ -345,37 +350,37 @@
                                 morbi.
                             </p>
                             <ul>
-                                <li><a href="#"><img src="img/footer-ic1.svg" alt="ic"></a></li>
-                                <li><a href="#"><img src="img/footer-ic2.svg" alt="ic"></a></li>
-                                <li><a href="#"><img src="img/footer-ic3.svg" alt="ic"></a></li>
+                                <li><a href="#" target="_blank"><img src="img/footer-ic1.svg" alt="ic"></a></li>
+                                <li><a href="#" target="_blank"><img src="img/footer-ic2.svg" alt="ic"></a></li>
+                                <li><a href="#" target="_blank"><img src="img/footer-ic3.svg" alt="ic"></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-xl-10 col-lg-9">
                         <div class="footerboxlists">
                             <div class="footerboxlist">
                                 <p class="title">Our company</p>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#1">Home</a></li>
+                                    <li><a href="#4">Contact us</a></li>
                                 </ul>
                             </div>
                             <div class="footerboxlist">
                                 <p class="title">Our Service</p>
                                 <ul>
-                                    <li><a href="#">Production And Inventory Apps</a></li>
-                                    <li><a href="#">Informational Websites</a></li>
-                                    <li><a href="#">E-commerce Websites</a></li>
-                                    <li><a href="#">Desktop Programs</a></li>
+                                    <li><a href="#s1">Production And Inventory Apps</a></li>
+                                    <li><a href="#s2">Informational Websites</a></li>
+                                    <li><a href="#s3">E-commerce Websites</a></li>
+                                    <li><a href="#s4">Desktop Programs</a></li>
                                 </ul>
                             </div>
                             <div class="footerboxlist">
                                 <p class="title">Our Profession</p>
                                 <ul>
-                                    <li><a href="#">Planning</a></li>
-                                    <li><a href="#">Design</a></li>
-                                    <li><a href="#">Develop And Test</a></li>
-                                    <li><a href="#">Delivery</a></li>
+                                    <li><a href="#p1">Planning</a></li>
+                                    <li><a href="#p2">Design</a></li>
+                                    <li><a href="#p3">Develop And Test</a></li>
+                                    <li><a href="#p4">Delivery</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -389,6 +394,7 @@
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lib/aos.js"></script>
 </body>
 
 </html>
