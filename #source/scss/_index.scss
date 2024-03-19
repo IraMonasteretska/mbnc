@@ -5,7 +5,7 @@
     padding-top: 238px;
     overflow: hidden;
     padding-bottom: 200px;
-    
+
     h1 {
         color: rgba(212, 223, 236, 1);
         margin-bottom: 64px;
@@ -433,6 +433,13 @@
     animation: rotate1 10s linear infinite;
 }
 
+.herosection h1 i {
+    font-style: normal;
+}
+
+.contactform .bluebtn {
+    text-transform: uppercase;
+}
 
 @media(max-width:1599.8px) {
     .herosection h1 {
@@ -614,13 +621,183 @@
 
 }
 
+@media(max-width:575.8px) {
+    .herosection {
+        padding-top: 140px;
+        padding-bottom: 380px;
+    }
+
+    .herosection h1 {
+        margin-bottom: 30px;
+
+        span {
+            padding-left: 45px;
+        }
+
+        i {
+            padding-left: 45px;
+        }
+    }
+
+    .herosection .descrbox {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .herosection .descrbox p {
+        font-size: 14px;
+    }
+
+    .bluebtn {
+        min-width: 257px;
+        text-align: center;
+    }
+
+    .herosection__img {
+        max-width: 500px;
+        right: -200px;
+        bottom: 0;
+    }
+
+    .services__header h2 {
+        margin-bottom: 35px;
+    }
+
+    .services__header {
+        margin-bottom: 60px;
+    }
+
+    .service .num {
+        font-size: 19px;
+    }
+
+    .service .title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .service {
+        margin-bottom: 40px;
+    }
+
+
+    .services {
+        padding: 60px 0 155px;
+    }
+
+    .services .servimgbg {
+        width: 400px;
+        bottom: 0;
+    }
+
+    .ourprofession {
+        padding: 95px 0 235px;
+    }
+
+    .ourprofession h3 {
+        margin-bottom: 30px;
+    }
+
+    .ourprofession p {
+        font-weight: 300;
+    }
+
+    .profsections {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .profsection {
+        max-width: 300px;
+        padding: 40px 15px 15px 15px;
+        margin-bottom: 20px;
+    }
+
+    .profsection:nth-child(2n) {
+        top: 0;
+    }
+
+    .profsection .imgwrap {
+        margin-bottom: 50px;
+
+        img {
+            max-width: 178px;
+        }
+    }
+
+    .profsection .title {
+        font-size: 28px;
+    }
+
+    .ourprofession .ourprofession__el1 {
+        top: 280px;
+        // animation: none;
+        left: -120px;
+    }
+
+    .services .servimgbg {
+        // animation: none;
+    }
+
+    .ourprofession .ourprofession__el2 {
+        // animation: none;
+        right: -210px;
+        bottom: 80px;
+    }
+
+    .contact {
+        padding: 80px 0;
+        background: url(../img/mobcontbg.png) no-repeat center / 100% 100%;
+    }
+
+    .contact__info {
+        padding: 20px 16px;
+    }
+
+    .contact__info h3 {
+        margin-bottom: 35px;
+    }
+
+    .contact__info p {
+        font-size: 14px;
+        color: #2B4E82;
+        max-width: 278px;
+        margin-bottom: 45px;
+    }
+
+    .contact__info .followus p.title {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contactform .title {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    .inputfield {
+        margin-bottom: 20px;
+    }
+
+    .contactform .bluebtn {
+        padding: 17.5px 24px;
+    }
+
+
+    .service .descr,
+    .ourprofession p {
+        font-size: 14px;
+    }
+}
+
+
+
+
 
 
 // font-family: 'vcrosdmono';
 
-// animation: focus-in-contract 2.2s ease-out 0s infinite alternate none;*/
-
-@media(max-height:850px) {
+@media(max-height:850px) and (min-width:768px) {
     .herosection {
         padding-top: 210px;
     }

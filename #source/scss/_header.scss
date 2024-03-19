@@ -7,7 +7,7 @@ header.header {
     padding: 55px 0 20px;
     transition: 0.5s;
     animation-timing-function: ease-in-out;
-    
+
     &.scrollheader {
         padding: 30px 0;
         background: #2b4e82;
@@ -286,5 +286,51 @@ header.header {
 
 
 
+
+}
+
+@media(max-width:575.8px) {
+    .header__logo img {
+        max-width: 108px;
+    }
+
+    header.header {
+        padding: 30px 0;
+        height: auto;
+        height: 64px;
+    }
+
+    header.header.scrollheader {
+        padding: 20px 0;
+    }
+
+    .menuwrapper {
+        top: 64px;
+        height: calc(100vh - 64px);
+    }
+
+    .header__rightsect {
+        padding: 100px 0 0 0;
+
+        nav {
+            ul {
+                padding-left: 80px;
+
+                li {
+                    margin: 0 0 40px 0;
+
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header__rightsect .header__link a {
+        width: 100%;
+        font-size: 17px;
+        text-align: center;
+    }
 
 }

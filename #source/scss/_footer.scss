@@ -140,3 +140,38 @@ footer.footer {
         }
     }
 }
+
+@media(max-width:575.8px) {
+    .footer__leftsect .footerlogo {
+        margin-bottom: 24px;
+    }
+
+    .footer__leftsect p {
+        max-width: 250px;
+    }
+
+    .footer__leftsect ul li {
+        margin-left: 0;
+        margin-right: 36px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .footer__leftsect {
+        margin-bottom: 70px;
+    }
+
+    .footerboxlists .footerboxlist .title {
+        margin-bottom: 20px;
+    }
+
+    .footerboxlists .footerboxlist ul li {
+        margin-bottom: 15px;
+    }
+
+    .footerboxlist {
+        margin-bottom: 45px;
+    }
+}

@@ -58,12 +58,10 @@ $(document).ready(function () {
 
     // AOS init
     AOS.init({
-        // disable: 'phone',
+        disable: 'phone',
         easing: 'ease-in-out',
         duration: 800
     });
-
-
 
 
 });
